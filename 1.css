@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+}
+
+header {
+  background-color: #FDFDFD;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2F4F4F;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  
+}
+
+nav li {
+  font-style: italic;
+  margin: 0 10px;
+  color: purple;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #f00;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 1600px;
+  height: 720px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.banner h2 {
+  font-size: 48px;
+  font-weight: bold;
+  font-style:italic;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 35px;
+  font-style:italic;
+  
+}
+
+
+.places-to-visit {
+  margin: 50px 0;
+}
+
+.places-to-visit h2 {
+  font-style:serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.places-to-visit ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.places-to-visit li {
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px #ccc;
+}
+
+.places-to-visit li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.places-to-visit li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.places-to-visit {
+  margin: 50px 0;
+}
+
+
+.hotels {
+  margin: 50px 0;
+}
+
+.hotels h2 {
+  font-style:serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hotels ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotels li {
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px #ccc;
+}
+
+.hotels li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hotels li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.hotels {
+  margin:50px0;
+}
+
+.restraunts {
+  margin: 50px 0;
+}
+
+.restraunts h2 {
+  font-style:serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.restraunts ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.restraunts li {
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px #ccc;
+}
+
+.restraunts li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.restrauntsli h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.restraunts {
+  margin:50px0;
+}
+
+.emergency {
+  margin: 50px 0;
+}
+
+.emergency h2 {
+  font-style: serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.emergency ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.emergency li {
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px #ccc;
+}
+
+.emergency li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.emergency li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.emergency {
+  margin: 50px 0;
+}
+
+.shopping {
+  margin: 50px 0;
+}
+
+.shopping h2 {
+  font-style:serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shopping ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopping li {
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px #ccc;
+}
+
+.shopping li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.shopping li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.shopping {
+  margin: 50px 0;
+}
